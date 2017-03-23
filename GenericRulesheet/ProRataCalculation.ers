@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="6" buildNumber="6096" updateStamp="_0m9uE-dlEeaQhYHmiJkmJg" externalChecksum="1656973143:3467459836:2081899827">
+  <languageCode>en_NZ</languageCode>
+  <ruleset vocabularyUpdateStamp="_o5gocOdlEeaQhYHmiJkmJg" vocabulary="ProRataCalc.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="Risk.DaysCovered = Risk.CoverEffDate.daysBetween(Risk.CoverEndDate)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.DaysCovered = Risk.CoverEffDate.daysBetween ( Risk.CoverEndDate )" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="DaysCovered" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DaysCovered">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="daysBetween" datatype="Integer" termtype="METHOD" fulltext="Risk.CoverEffDate.daysBetween">
+                <parentTerm text="CoverEffDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Risk.CoverEffDate">
+                  <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="CoverEndDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Risk.CoverEndDate">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Risk.CoverYearEnd =Risk.CoverStartDate.addYears(1)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.CoverYearEnd = Risk.CoverStartDate.addYears ( 1 )" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="CoverYearEnd" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Risk.CoverYearEnd">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="addYears" datatype="DateTime" termtype="METHOD" fulltext="Risk.CoverStartDate.addYears">
+                <parentTerm text="CoverStartDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Risk.CoverStartDate">
+                  <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Risk.CoverToday = now.toDate()">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.CoverToday = now.toDate" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="CoverToday" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Risk.CoverToday">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Risk.CoverYearDays=Risk.CoverStartDate.daysBetween(Risk.CoverYearEnd)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.CoverYearDays = Risk.CoverStartDate.daysBetween ( Risk.CoverYearEnd )" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="CoverYearDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.CoverYearDays">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="daysBetween" datatype="Integer" termtype="METHOD" fulltext="Risk.CoverStartDate.daysBetween">
+                <parentTerm text="CoverStartDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Risk.CoverStartDate">
+                  <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="CoverYearEnd" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Risk.CoverYearEnd">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Risk.CoverPercentage=Risk.DaysCovered/Risk.CoverYearDays">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.CoverPercentage = Risk.DaysCovered / Risk.CoverYearDays" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="CoverPercentage" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Risk.CoverPercentage">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="DaysCovered" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DaysCovered">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="CoverYearDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.CoverYearDays">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Risk.DeltaCoyPremium =Risk.AnnualCoyPremium-Risk.PrevAnnualCoyPremium">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.DeltaCoyPremium = Risk.AnnualCoyPremium - Risk.PrevAnnualCoyPremium" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="DeltaCoyPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DeltaCoyPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="AnnualCoyPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.AnnualCoyPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="PrevAnnualCoyPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.PrevAnnualCoyPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Risk.DeltaEQC=Risk.AnnualEQC-Risk.PrevAnnualEQC">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.DeltaEQC = Risk.AnnualEQC - Risk.PrevAnnualEQC" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="DeltaEQC" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DeltaEQC">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="PrevAnnualEQC" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.PrevAnnualEQC">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="AnnualEQC" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.AnnualEQC">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Risk.DeltaFSL=Risk.AnnualFSL-Risk.PrevAnnualFSL">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.DeltaFSL = Risk.AnnualFSL - Risk.PrevAnnualFSL" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="DeltaFSL" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DeltaFSL">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="PrevAnnualFSL" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.PrevAnnualFSL">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="AnnualFSL" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.AnnualFSL">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Risk.DeltaCeqPremium=Risk.AnnualCeqPremium-Risk.PrevAnnualCeqPremium">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.DeltaCeqPremium = Risk.AnnualCeqPremium - Risk.PrevAnnualCeqPremium" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="DeltaCeqPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DeltaCeqPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="AnnualCeqPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.AnnualCeqPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="PrevAnnualCeqPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.PrevAnnualCeqPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Risk.ThisTransCoyPremium =(Risk.DeltaCoyPremium *Risk.CoverPercentage).toInteger">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.ThisTransCoyPremium = ( Risk.DeltaCoyPremium * Risk.CoverPercentage ).toInteger" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ThisTransCoyPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.ThisTransCoyPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="DeltaCoyPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DeltaCoyPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="CoverPercentage" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Risk.CoverPercentage">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Risk.ThisTransEQC =(Risk.DeltaEQC*Risk.CoverPercentage).toInteger">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.ThisTransEQC = ( Risk.DeltaEQC * Risk.CoverPercentage ).toInteger" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ThisTransEQC" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.ThisTransEQC">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="DeltaEQC" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DeltaEQC">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="CoverPercentage" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Risk.CoverPercentage">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Risk.ThisTransFSL=(Risk.DeltaFSL*Risk.CoverPercentage).toInteger">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.ThisTransFSL = ( Risk.DeltaFSL * Risk.CoverPercentage ).toInteger" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ThisTransFSL" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.ThisTransFSL">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="DeltaFSL" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DeltaFSL">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="CoverPercentage" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Risk.CoverPercentage">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Risk.ThisTransCeqPremium=(Risk.DeltaCeqPremium*Risk.CoverPercentage).toInteger">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.ThisTransCeqPremium = ( Risk.DeltaCeqPremium * Risk.CoverPercentage ).toInteger" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ThisTransCeqPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.ThisTransCeqPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="DeltaCeqPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DeltaCeqPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="CoverPercentage" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Risk.CoverPercentage">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable entity="ProRataCalc.ecore#//Risk">
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/AnnualCeqPremium"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/AnnualCoyPremium"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/AnnualEQC"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/AnnualFSL"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/CoverEffDate"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/CoverEndDate"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/CoverPercentage"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/CoverStartDate"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/CoverYearDays"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/CoverYearEnd"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/DaysCovered"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/DeltaCeqPremium"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/DeltaCoyPremium"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/DeltaEQC"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/DeltaFSL"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/PrevAnnualCeqPremium"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/PrevAnnualCoyPremium"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/PrevAnnualEQC"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/PrevAnnualFSL"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/ThisTransCeqPremium"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/ThisTransCoyPremium"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/ThisTransEQC"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/ThisTransFSL"/>
+      <referencedAttributes attribute="ProRataCalc.ecore#//Risk/CoverToday"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="15" sashWeightConditionsIf="39">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Risk.DaysCovered = Risk.CoverEffDate.daysBetween(Risk.CoverEndDate)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.DaysCovered = Risk.CoverEffDate.daysBetween ( Risk.CoverEndDate )" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="DaysCovered" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DaysCovered">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="daysBetween" datatype="Integer" termtype="METHOD" fulltext="Risk.CoverEffDate.daysBetween">
+                <parentTerm text="CoverEffDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Risk.CoverEffDate">
+                  <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="CoverEndDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Risk.CoverEndDate">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Risk.CoverYearEnd =Risk.CoverStartDate.addYears(1)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.CoverYearEnd = Risk.CoverStartDate.addYears ( 1 )" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="CoverYearEnd" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Risk.CoverYearEnd">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="addYears" datatype="DateTime" termtype="METHOD" fulltext="Risk.CoverStartDate.addYears">
+                <parentTerm text="CoverStartDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Risk.CoverStartDate">
+                  <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Risk.CoverToday = now.toDate()">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.CoverToday = now.toDate" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="CoverToday" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Risk.CoverToday">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Risk.CoverYearDays=Risk.CoverStartDate.daysBetween(Risk.CoverYearEnd)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.CoverYearDays = Risk.CoverStartDate.daysBetween ( Risk.CoverYearEnd )" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="CoverYearDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.CoverYearDays">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="daysBetween" datatype="Integer" termtype="METHOD" fulltext="Risk.CoverStartDate.daysBetween">
+                <parentTerm text="CoverStartDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Risk.CoverStartDate">
+                  <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="CoverYearEnd" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Risk.CoverYearEnd">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet=""/>
+        <expressionCell external="Risk.CoverPercentage=Risk.DaysCovered/Risk.CoverYearDays">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.CoverPercentage = Risk.DaysCovered / Risk.CoverYearDays" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="CoverPercentage" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Risk.CoverPercentage">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="DaysCovered" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DaysCovered">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="CoverYearDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.CoverYearDays">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet=""/>
+        <expressionCell external="Risk.DeltaCoyPremium =Risk.AnnualCoyPremium-Risk.PrevAnnualCoyPremium">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.DeltaCoyPremium = Risk.AnnualCoyPremium - Risk.PrevAnnualCoyPremium" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="DeltaCoyPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DeltaCoyPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="AnnualCoyPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.AnnualCoyPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="PrevAnnualCoyPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.PrevAnnualCoyPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Risk.DeltaEQC=Risk.AnnualEQC-Risk.PrevAnnualEQC">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.DeltaEQC = Risk.AnnualEQC - Risk.PrevAnnualEQC" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="DeltaEQC" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DeltaEQC">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="PrevAnnualEQC" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.PrevAnnualEQC">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="AnnualEQC" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.AnnualEQC">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Risk.DeltaFSL=Risk.AnnualFSL-Risk.PrevAnnualFSL">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.DeltaFSL = Risk.AnnualFSL - Risk.PrevAnnualFSL" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="DeltaFSL" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DeltaFSL">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="PrevAnnualFSL" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.PrevAnnualFSL">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="AnnualFSL" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.AnnualFSL">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Risk.DeltaCeqPremium=Risk.AnnualCeqPremium-Risk.PrevAnnualCeqPremium">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.DeltaCeqPremium = Risk.AnnualCeqPremium - Risk.PrevAnnualCeqPremium" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="DeltaCeqPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DeltaCeqPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="AnnualCeqPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.AnnualCeqPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="PrevAnnualCeqPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.PrevAnnualCeqPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet=""/>
+        <expressionCell external="Risk.ThisTransCoyPremium =(Risk.DeltaCoyPremium *Risk.CoverPercentage).toInteger">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.ThisTransCoyPremium = ( Risk.DeltaCoyPremium * Risk.CoverPercentage ).toInteger" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ThisTransCoyPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.ThisTransCoyPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="DeltaCoyPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DeltaCoyPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="CoverPercentage" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Risk.CoverPercentage">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Risk.ThisTransEQC =(Risk.DeltaEQC*Risk.CoverPercentage).toInteger">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.ThisTransEQC = ( Risk.DeltaEQC * Risk.CoverPercentage ).toInteger" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ThisTransEQC" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.ThisTransEQC">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="DeltaEQC" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DeltaEQC">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="CoverPercentage" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Risk.CoverPercentage">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Risk.ThisTransFSL=(Risk.DeltaFSL*Risk.CoverPercentage).toInteger">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.ThisTransFSL = ( Risk.DeltaFSL * Risk.CoverPercentage ).toInteger" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ThisTransFSL" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.ThisTransFSL">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="DeltaFSL" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DeltaFSL">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="CoverPercentage" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Risk.CoverPercentage">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Risk.ThisTransCeqPremium=(Risk.DeltaCeqPremium*Risk.CoverPercentage).toInteger">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Risk.ThisTransCeqPremium = ( Risk.DeltaCeqPremium * Risk.CoverPercentage ).toInteger" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ThisTransCeqPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.ThisTransCeqPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="DeltaCeqPremium" datatype="Integer" termtype="ATTRIBUTE" fulltext="Risk.DeltaCeqPremium">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="CoverPercentage" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Risk.CoverPercentage">
+                <parentTerm text="Risk" datatype="Risk" termtype="ENTITY" fulltext="Risk" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.4"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.5"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.6"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.7"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.8"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.9"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.10"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.11"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.12"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.13"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.14"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.15"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.16"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.17"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.18"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.19"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.20"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.21"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.22"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.23"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

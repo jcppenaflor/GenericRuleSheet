@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="6" buildNumber="6096" updateStamp="_b4x3sedSEeaUh_nitEOKnQ" externalChecksum="1656973143:3467459836">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="6" buildNumber="6096" updateStamp="_q3BXcempEeaFY4DGHKfj7A" externalChecksum="1656973143:3467459836">
+    <testsheet ruleActivityUpdateStamp="_0m9uE-dlEeaQhYHmiJkmJg" ruleActivity="ProRataCalculation.ers#//@ruleset">
+      <input/>
+      <output/>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" expanded="false" eClass="ProRataCalc.ecore#//Risk">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20550" eAttribute="ProRataCalc.ecore#//Risk/AnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="30110" eAttribute="ProRataCalc.ecore#//Risk/AnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/AnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/AnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEffDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/05/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEndDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/CoverPercentage"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverStartDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/CoverYearDays"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/CoverYearEnd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/DaysCovered"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/DeltaCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/DeltaCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/DeltaEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/DeltaFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/ThisTransEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/ThisTransFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/CoverToday"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" expanded="false" eClass="ProRataCalc.ecore#//Risk">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20550" eAttribute="ProRataCalc.ecore#//Risk/AnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="30110" eAttribute="ProRataCalc.ecore#//Risk/AnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/AnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/AnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEffDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/04/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEndDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/CoverPercentage"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverStartDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/CoverYearDays"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/CoverYearEnd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/DaysCovered"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/DeltaCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/DeltaCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/DeltaEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/DeltaFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/ThisTransEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/ThisTransFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/CoverToday"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" expanded="false" eClass="ProRataCalc.ecore#//Risk">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20550" eAttribute="ProRataCalc.ecore#//Risk/AnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="30110" eAttribute="ProRataCalc.ecore#//Risk/AnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20000" eAttribute="ProRataCalc.ecore#//Risk/AnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/AnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEffDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/04/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEndDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/CoverPercentage"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverStartDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/CoverYearDays"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/CoverYearEnd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/DaysCovered"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/DeltaCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/DeltaCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/DeltaEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/DeltaFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/ThisTransEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/ThisTransFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="ProRataCalc.ecore#//Risk/CoverToday"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" expanded="false" eClass="ProRataCalc.ecore#//Risk">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20550" eAttribute="ProRataCalc.ecore#//Risk/AnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="30110" eAttribute="ProRataCalc.ecore#//Risk/AnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000" eAttribute="ProRataCalc.ecore#//Risk/AnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000" eAttribute="ProRataCalc.ecore#//Risk/AnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEffDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="27/05/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEndDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.330601" eAttribute="ProRataCalc.ecore#//Risk/CoverPercentage"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverStartDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="366" eAttribute="ProRataCalc.ecore#//Risk/CoverYearDays"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="27/01/2021" eAttribute="ProRataCalc.ecore#//Risk/CoverYearEnd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="121" eAttribute="ProRataCalc.ecore#//Risk/DaysCovered"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="20550" eAttribute="ProRataCalc.ecore#//Risk/DeltaCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="30110" eAttribute="ProRataCalc.ecore#//Risk/DeltaCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/DeltaEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/DeltaFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="6793" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="9954" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3306" eAttribute="ProRataCalc.ecore#//Risk/ThisTransEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3306" eAttribute="ProRataCalc.ecore#//Risk/ThisTransFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="03/02/2017" eAttribute="ProRataCalc.ecore#//Risk/CoverToday"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" eClass="ProRataCalc.ecore#//Risk">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20550" eAttribute="ProRataCalc.ecore#//Risk/AnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="30110" eAttribute="ProRataCalc.ecore#//Risk/AnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000" eAttribute="ProRataCalc.ecore#//Risk/AnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000" eAttribute="ProRataCalc.ecore#//Risk/AnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEffDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="27/04/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEndDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.248634" eAttribute="ProRataCalc.ecore#//Risk/CoverPercentage"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverStartDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="366" eAttribute="ProRataCalc.ecore#//Risk/CoverYearDays"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="27/01/2021" eAttribute="ProRataCalc.ecore#//Risk/CoverYearEnd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="91" eAttribute="ProRataCalc.ecore#//Risk/DaysCovered"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="20550" eAttribute="ProRataCalc.ecore#//Risk/DeltaCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="30110" eAttribute="ProRataCalc.ecore#//Risk/DeltaCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/DeltaEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/DeltaFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="5109" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="7486" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2486" eAttribute="ProRataCalc.ecore#//Risk/ThisTransEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2486" eAttribute="ProRataCalc.ecore#//Risk/ThisTransFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="03/02/2017" eAttribute="ProRataCalc.ecore#//Risk/CoverToday"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" eClass="ProRataCalc.ecore#//Risk">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20550" eAttribute="ProRataCalc.ecore#//Risk/AnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="30110" eAttribute="ProRataCalc.ecore#//Risk/AnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20000" eAttribute="ProRataCalc.ecore#//Risk/AnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000" eAttribute="ProRataCalc.ecore#//Risk/AnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEffDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="27/04/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEndDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.248634" eAttribute="ProRataCalc.ecore#//Risk/CoverPercentage"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverStartDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="366" eAttribute="ProRataCalc.ecore#//Risk/CoverYearDays"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="27/01/2021" eAttribute="ProRataCalc.ecore#//Risk/CoverYearEnd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="91" eAttribute="ProRataCalc.ecore#//Risk/DaysCovered"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="20550" eAttribute="ProRataCalc.ecore#//Risk/DeltaCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="30110" eAttribute="ProRataCalc.ecore#//Risk/DeltaCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="20000" eAttribute="ProRataCalc.ecore#//Risk/DeltaEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/DeltaFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="5109" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="7486" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="4972" eAttribute="ProRataCalc.ecore#//Risk/ThisTransEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2486" eAttribute="ProRataCalc.ecore#//Risk/ThisTransFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="03/02/2017" eAttribute="ProRataCalc.ecore#//Risk/CoverToday"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="ProRataCalc.ecore#//Risk">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20550" eAttribute="ProRataCalc.ecore#//Risk/AnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="30110" eAttribute="ProRataCalc.ecore#//Risk/AnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/AnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/AnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEffDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/05/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEndDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.330601" eAttribute="ProRataCalc.ecore#//Risk/CoverPercentage"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverStartDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="366" eAttribute="ProRataCalc.ecore#//Risk/CoverYearDays"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/01/2021" eAttribute="ProRataCalc.ecore#//Risk/CoverYearEnd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="121" eAttribute="ProRataCalc.ecore#//Risk/DaysCovered"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20550" eAttribute="ProRataCalc.ecore#//Risk/DeltaCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="30110" eAttribute="ProRataCalc.ecore#//Risk/DeltaCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/DeltaEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/DeltaFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="6793" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="9954" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="3306" eAttribute="ProRataCalc.ecore#//Risk/ThisTransEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="3306" eAttribute="ProRataCalc.ecore#//Risk/ThisTransFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="03/02/2017" eAttribute="ProRataCalc.ecore#//Risk/CoverToday"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="ProRataCalc.ecore#//Risk">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20550" eAttribute="ProRataCalc.ecore#//Risk/AnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="30110" eAttribute="ProRataCalc.ecore#//Risk/AnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/AnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/AnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEffDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/04/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEndDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.248634" eAttribute="ProRataCalc.ecore#//Risk/CoverPercentage"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverStartDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="366" eAttribute="ProRataCalc.ecore#//Risk/CoverYearDays"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/01/2021" eAttribute="ProRataCalc.ecore#//Risk/CoverYearEnd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="91" eAttribute="ProRataCalc.ecore#//Risk/DaysCovered"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20550" eAttribute="ProRataCalc.ecore#//Risk/DeltaCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="30110" eAttribute="ProRataCalc.ecore#//Risk/DeltaCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/DeltaEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/DeltaFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5109" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="7486" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2486" eAttribute="ProRataCalc.ecore#//Risk/ThisTransEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2486" eAttribute="ProRataCalc.ecore#//Risk/ThisTransFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="03/02/2017" eAttribute="ProRataCalc.ecore#//Risk/CoverToday"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="ProRataCalc.ecore#//Risk">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20550" eAttribute="ProRataCalc.ecore#//Risk/AnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="30110" eAttribute="ProRataCalc.ecore#//Risk/AnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20000" eAttribute="ProRataCalc.ecore#//Risk/AnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/AnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEffDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/04/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverEndDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.248634" eAttribute="ProRataCalc.ecore#//Risk/CoverPercentage"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/01/2020" eAttribute="ProRataCalc.ecore#//Risk/CoverStartDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="366" eAttribute="ProRataCalc.ecore#//Risk/CoverYearDays"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="27/01/2021" eAttribute="ProRataCalc.ecore#//Risk/CoverYearEnd"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="91" eAttribute="ProRataCalc.ecore#//Risk/DaysCovered"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20550" eAttribute="ProRataCalc.ecore#//Risk/DeltaCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="30110" eAttribute="ProRataCalc.ecore#//Risk/DeltaCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20000" eAttribute="ProRataCalc.ecore#//Risk/DeltaEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10000" eAttribute="ProRataCalc.ecore#//Risk/DeltaFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="ProRataCalc.ecore#//Risk/PrevAnnualFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5109" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCeqPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="7486" eAttribute="ProRataCalc.ecore#//Risk/ThisTransCoyPremium"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="4972" eAttribute="ProRataCalc.ecore#//Risk/ThisTransEQC"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2486" eAttribute="ProRataCalc.ecore#//Risk/ThisTransFSL"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="03/02/2017" eAttribute="ProRataCalc.ecore#//Risk/CoverToday"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_o5gocOdlEeaQhYHmiJkmJg" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="ProRataCalc.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="untitled_1"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>
